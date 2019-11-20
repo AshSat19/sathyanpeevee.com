@@ -20,7 +20,8 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
+              "src/icon.png",
+              "src/icon.ico",
               "src/assets",
               "src/manifest.webmanifest"
             ],
@@ -30,14 +31,7 @@
               "src/assets/css/main.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "src/assets/js/main.js",
-              "src/assets/js/jquery.min.js",
-              "src/assets/js/jquery.poptrox.min.js",
-              "src/assets/js/jquery.scrollex.min.js",
-              "src/assets/js/skel.min.js",
-              "src/assets/js/util.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

@@ -88,9 +88,27 @@
     text-align: center;
 }
 
+.logo {
+    width: 10vw; 
+    filter: invert(1);
+}
+
+.ctaButton {
+    background: transparent;
+    border: 1px solid lightgrey;
+    color: lightgrey;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
 @media screen and (max-width: 736px) {
     .media {
         width: calc(100%/3) !important;
+    }
+
+    .logo {
+        width: 25vw;
     }
 }
 

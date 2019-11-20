@@ -15,14 +15,14 @@
     >
         <span class="icon fa-user"></span>
     </button>
-    <button 
+    <!-- <button 
         class="grey"
         style="width: calc(100%/5);"
         routerLink="/about"
         routerLinkActive="nav-active"
     >
         <span class="icon fa-briefcase"></span>
-    </button>
+    </button> -->
     <button 
         class="grey"
         style="width: calc(100%/5);"
@@ -50,17 +50,17 @@
 </mat-toolbar>
 
 <mat-toolbar class="w-100" style="background: transparent; z-index: 1000; position: absolute; top: 0;">
+    <div class="spacer"></div>
     <button 
         class="lato-font"
         routerLink="/"
+        routerLinkActive="button-active"
+        [routerLinkActiveOptions]="{exact: true}"
         style="font-weight: bold;"
     >
-        SathianPeeVee
+        Home
     </button>
-    <div class="spacer"></div>
     <button 
-        mat-button 
-        color="accent" 
         class="lato-font"
         routerLink="/about"
         routerLinkActive="button-active"
@@ -68,19 +68,15 @@
     >
         About Me
     </button>
-    <button 
-        mat-button 
-        color="accent" 
+    <!-- <button 
         class="lato-font"
         routerLink="/services"
         routerLinkActive="button-active"
         style="font-weight: bold;"
     >
         Services
-    </button>
+    </button> -->
     <button 
-        mat-button 
-        color="accent" 
         class="lato-font"
         routerLink="/gallery"
         routerLinkActive="button-active"
@@ -89,8 +85,6 @@
         Image Gallery
     </button>
     <button 
-        mat-button 
-        color="accent" 
         class="lato-font"
         routerLink="/video-gallery"
         routerLinkActive="button-active"
@@ -99,8 +93,6 @@
         Video Gallery
     </button>
     <button 
-        mat-button 
-        color="accent" 
         class="lato-font"
         routerLink="/contact"
         routerLinkActive="button-active"

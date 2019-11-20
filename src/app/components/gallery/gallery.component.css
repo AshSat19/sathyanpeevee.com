@@ -28,10 +28,6 @@ h1 {
   .media {
       width: calc(100%/3) !important;
   }
-
-  .slideshow-container {
-    display: none;
-  }
 }
 
 .top-margin {
