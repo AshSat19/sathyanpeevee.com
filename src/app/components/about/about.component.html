@@ -1,0 +1,50 @@
+<div class="container top-margin">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="lato-font">
+                About Me
+            </h1>
+            <mat-divider></mat-divider>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8">
+                        <p class="lato-font" style="font-size: 1.25rem;">
+                            When I started off my life as a photographer and 
+                            videographer more than three decades ago, the beginnings 
+                            were humble, in a small town in the southern Indian state of 
+                            Kerala. Soon after, the migration to the Sultanante of Oman 
+                            happened. Ever since then, the journey has been a 
+                            learning experience that continues to this day. 
+                        </p>
+                        <p class="lato-font" style="font-size: 1.25rem;">
+                            'Quality over Quantity' is the mantra I have always 
+                            tried to work by because at the end of the day, 
+                            completing and delivering one good work prevails over 
+                            delivering ten mediocre ones. From the age of the 
+                            Polaroid and the Beta Max, the SLRs and the VHS, 
+                            all the way down to where we stand right now - 
+                            mirrorless DSLR and 4K video, keeping up with 
+                            the trend and striving to deliver work of 
+                            industry standards. Opportunities to work with 
+                            an esteemed clientele and the ability to cater 
+                            to their needs and expecattions is the reward I 
+                            value above all, as has been the case till date.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3">
+                <h2 class="lato-font text-center">
+                    Top clients and collaborators
+                </h2>
+                <div class="row">
+                    <div class="col-md-3"*ngFor="let client of clients">
+                        <img [src]="client" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

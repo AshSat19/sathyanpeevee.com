@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.lato-font {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: bold !important;
+    -webkit-font-weight: bold !important;
+    -webkit-text-stroke: 1px;
+}
+
+button {
+    background: transparent;
+    color: lightgray;
+    outline: none;
+}
+
+.button-active {
+    border-bottom: 1px solid lightgray;
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+a {
+    color: lightgray;
+}
+
+.nav-active {
+    color: white;
+}
+
+.nav-icon {
+    width: calc(100%/6) !important;
+}
+
+.grey {
+    color: lightgray !important;
+}
+
+#mobile-nav { 
+    background: transparent; 
+    width: 100vw;
+    z-index: 1000; 
+    position: absolute; 
+    top: 0; 
+    display: block; 
+}
+
+@media only screen and (max-width: 760px) {
+    mat-toolbar { display: none; }
+    #mobile-nav { display: block; }
+}
+
+@media only screen and (min-width: 760px) {
+    #mobile-nav { display: none; }
+}

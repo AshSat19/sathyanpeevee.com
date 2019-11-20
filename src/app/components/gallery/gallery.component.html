@@ -1,0 +1,23 @@
+<div class="container top-margin">
+    <h1 class="lato-font">
+        Image Gallery
+    </h1>
+    <mat-divider></mat-divider>
+    <section id="galleries">
+        <div class="gallery">
+            <div class="slideshow-container">
+                <div class="mySlides fade" *ngFor="let img of images; index as i">
+                    <img [src]="img" style="width:100%">
+                </div>        
+                <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+                <a class="next" (click)="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div class="content">
+                <div class="media" *ngFor="let img of images; let i = index">
+                    <img [src]="img" (click)="openPreviewDialog('all', i)" />
+                </div>    
+            </div>
+        </div>
+    </section>
+</div>

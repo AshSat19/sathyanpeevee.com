@@ -1,0 +1,111 @@
+<mat-toolbar id="mobile-nav" class="w-100">
+    <button 
+        class="grey"
+        style="width: calc(100%/5);"
+        routerLink="/"
+        routerLinkActive="nav-active"
+    >
+        <span class="icon fa-home"></span>
+    </button>
+    <button 
+        class="grey"
+        style="width: calc(100%/5);"
+        routerLink="/about"
+        routerLinkActive="nav-active"
+    >
+        <span class="icon fa-user"></span>
+    </button>
+    <button 
+        class="grey"
+        style="width: calc(100%/5);"
+        routerLink="/about"
+        routerLinkActive="nav-active"
+    >
+        <span class="icon fa-briefcase"></span>
+    </button>
+    <button 
+        class="grey"
+        style="width: calc(100%/5);"
+        routerLink="/gallery"
+        routerLinkActive="nav-active"
+    >
+        <span class="icon fa-image"></span>
+    </button>
+    <button 
+        class="grey"
+        style="width: calc(100%/5);"
+        routerLink="/video-gallery"
+        routerLinkActive="nav-active"
+    >
+        <span class="icon fa-film"></span>
+    </button>
+    <button 
+        class="grey"
+        style="width: calc(100%/5);"
+        routerLink="/contact"
+        routerLinkActive="nav-active"
+    >
+        <span class="icon fa-comment"></span>
+    </button>
+</mat-toolbar>
+
+<mat-toolbar class="w-100" style="background: transparent; z-index: 1000; position: absolute; top: 0;">
+    <button 
+        class="lato-font"
+        routerLink="/"
+        style="font-weight: bold;"
+    >
+        SathianPeeVee
+    </button>
+    <div class="spacer"></div>
+    <button 
+        mat-button 
+        color="accent" 
+        class="lato-font"
+        routerLink="/about"
+        routerLinkActive="button-active"
+        style="font-weight: bold;"
+    >
+        About Me
+    </button>
+    <button 
+        mat-button 
+        color="accent" 
+        class="lato-font"
+        routerLink="/services"
+        routerLinkActive="button-active"
+        style="font-weight: bold;"
+    >
+        Services
+    </button>
+    <button 
+        mat-button 
+        color="accent" 
+        class="lato-font"
+        routerLink="/gallery"
+        routerLinkActive="button-active"
+        style="font-weight: bold;"
+    >
+        Image Gallery
+    </button>
+    <button 
+        mat-button 
+        color="accent" 
+        class="lato-font"
+        routerLink="/video-gallery"
+        routerLinkActive="button-active"
+        style="font-weight: bold;"
+    >
+        Video Gallery
+    </button>
+    <button 
+        mat-button 
+        color="accent" 
+        class="lato-font"
+        routerLink="/contact"
+        routerLinkActive="button-active"
+        style="font-weight: bold;"
+    >
+        Contact Me
+    </button>
+</mat-toolbar>

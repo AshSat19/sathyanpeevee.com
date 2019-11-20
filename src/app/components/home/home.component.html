@@ -1,0 +1,136 @@
+<section id="main">
+  <section id="banner">
+    <div class="inner">
+      <h1 class="lato-font" style="font-weight: lighter;">Hey, I'm Sathian</h1>
+      <!-- <p>
+        Capturing best frames since 1988
+      </p> -->
+      <ul class="actions">
+        <li>
+          <a 
+            (click)="explore()" 
+            class="button alt scrolly big lato-text"
+            style="border-radius: 10px;"
+          >
+            Explore
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="what-new">
+    <div class="gallery">
+      <h1 class="lato-font" style="font-weight: lighter; text-align: center;">
+        What's New
+      </h1>
+      <div class="content">
+        <div class="media" *ngFor="let img of whatsNew">
+          <img [src]="img">
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="d-block mx-auto">
+            <button 
+              mat-flat-button 
+              routerLink="/gallery"
+              color="primary" 
+              class="text-uppercase mx-1"
+            >
+              View Image Gallery
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+    <h1 class="lato-font" style="font-weight: lighter; text-align: center;">
+      There's something for everyone
+    </h1>
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <div class="wrapper">
+          <img 
+            src="../../../assets/images/Faces/04.jpg"
+            alt="Smiles" 
+            class="image" 
+            style="width:100%"
+          >
+          <div class="middle">
+            <div class="text lato-font">Smiles</div>
+          </div>
+          <div class="overlay">
+            <div class="text lato-font">Smiles</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="wrapper">
+          <img 
+            src="../../../assets/images/Corporate/01.jpg"
+            alt="Smiles" 
+            class="image" 
+            style="width:100%"
+          >
+          <div class="middle">
+            <div class="text lato-font">Corporate</div>
+          </div>
+          <div class="overlay">
+            <div class="text lato-font">Corporate</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper">
+          <img 
+            src="../../../assets/images/Food/03.jpg"
+            alt="Smiles" 
+            class="image" 
+            style="width:100%"
+          >
+          <div class="middle">
+            <div class="text lato-font">Tastes</div>
+          </div>
+          <div class="overlay">
+            <div class="text lato-font">Tastes</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper">
+          <img 
+            src="../../../assets/images/Interiors/03.jpg"
+            alt="Smiles" 
+            class="image" 
+            style="width:100%"
+          >
+          <div class="middle">
+            <div class="text lato-font">Interiors</div>
+          </div>
+          <div class="overlay">
+            <div class="text lato-font">Interiors</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wrapper">
+          <img 
+            src="../../../assets/images/Landscape/02.jpg"
+            alt="Smiles" 
+            class="image" 
+            style="width:100%"
+          >
+          <div class="middle">
+            <div class="text lato-font">Outdoors</div>
+          </div>
+          <div class="overlay">
+            <div class="text lato-font">Outdoors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
